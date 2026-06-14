@@ -752,3 +752,50 @@ footer {
   margin-left: 10px;
   cursor: pointer;
 }
+
+.section .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .image img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  padding: 0;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.95);
+}
+
+.section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.section > div:first-child {
+  flex: 1;
+  min-width: 300px;
+}
+
+.section .image {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .image img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  display: block;
+}
